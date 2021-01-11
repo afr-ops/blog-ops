@@ -19,7 +19,7 @@ class PostForm(forms.ModelForm):
             'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Agregar el titulo al blog!'}),
             'title_tag': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Agregar el tema referido'}),
             #'author': forms.Select(attrs={'class': 'form-control'}),
-           'author': forms.TextInput(attrs={'class': 'form-control','value': '', 'id': 'elder', 'type': 'hidden'}),
+            'author': forms.TextInput(attrs={'class': 'form-control','value': '', 'id': 'elder', 'type': 'hidden'}),
             'category': forms.Select(choices=choices_list, attrs={'class': 'form-control'}),
             'body': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Desarrollo del tema'}),
             'snippet': forms.Textarea(attrs={'class': 'form-control'}),
