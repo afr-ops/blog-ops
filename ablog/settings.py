@@ -80,18 +80,6 @@ WSGI_APPLICATION = 'ablog.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-'''
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'blog',
-        'USER': 'postgres',
-        'PASSWORD': 'c1fr4d010',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
-'''
 
 DATABASES = {    
     'default': {
@@ -100,7 +88,6 @@ DATABASES = {
 
     }
 }
-
 
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=600)
